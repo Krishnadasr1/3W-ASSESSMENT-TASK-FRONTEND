@@ -24,7 +24,7 @@ const UserForm = () => {
     images.forEach((image) => formData.append('images', image));
 
     try {
-      await axios.post('http://localhost:5000/api/v1/user/submit', formData, {
+      await axios.post('https://threew-assessment-task-backend.onrender.com/api/v1/user/submit', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       alert('Data submitted successfully!');

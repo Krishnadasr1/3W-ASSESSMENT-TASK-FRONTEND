@@ -9,7 +9,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/v1/admin/getUsers');
+        const response = await axios.get('https://threew-assessment-task-backend.onrender.com/api/v1/admin/getUsers');
         setUsers(response.data);
       } catch (error) {
         alert('Failed to fetch users.');
